@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link href="/StopwatchProject/Calculator/style.css" rel="stysheet"> -->
+    <style>
+      
+        #operators{
+         margin-top: 30px;
+       } 
+      
+
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;text-decoration: underline;">Calculator</h2>
+   <div class="container" style="text-align:center;" >
+    
+    <div>
+       
+            <span style="border:0px solid; font-size: 30px; " id="firstinput" ></span> <br><br>
+            <input type="text" id="result" style="height:1.6em;font-size: 18px;"> 
+    </div>
+    
+    <br>
+       
+     
+    <div >
+       <button onclick ="userone(this)" id="one"> <span style="padding:1em;">1</span></button>
+
+       <button onclick="usertwo(this)" id="two"><span style="padding:1em;">2</span></button>
+
+       <button onclick="userthree(this)" id="three"><span style="padding:1em;">3</span></button>
+       <br><br>
+       <button onclick ="userfour(this)" id="four"><span style="padding:1em;">4</span></button>
+       <button onclick="userfive(this)" id="five"><span style="padding:1em;">5</span></button>
+       <button onclick="usersix(this)" id="six"><span style="padding:1em;">6</span></button>
+       <br><br>
+       <button onclick ="userseven(this)" id="seven"><span style="padding:1em;">7</span></button>
+       <button onclick="usereight(this)" id="eight"><span style="padding:1em;">8</span></button>
+       <button onclick="usernine(this)" id="nine"><span style="padding:1em;">9</span></button>
+    </div>
+    
+    <div id="operators"  >
+      <button onclick="operatorAdd(this)" id="add"><span style="padding:1em; ">+</span></button>
+      <button onclick="operatormin(this)" id="minus"><span style="padding:1em;">-</span></button>
+      <button onclick="operatormulti(this)" id="multi"><span style="padding:1em;">*</span></button> 
+      
+      <br><br>
+      
+      <button type="button" onclick="operatordivi(this)" id="divi"><span style="padding:1em;">/</span></button>
+      <button onclick="operatorequal(this)" id="equal"><span style="padding:1em;">=</span></button>
+      <button onclick="operatorclear(this)" id="clear"><span style="padding:1em;">c</span></button>
+    
+    </div>
+</div>
+    
+    <script src="/StopwatchProject/Calculator/script.js"></script>
+</body>
+</html>
