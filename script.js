@@ -51,6 +51,14 @@ let usernine = (e)=>{
    console.log(e);
    spinput.innerText = spinput.innerText + '9'
 }
+let userzero =(e)=>{
+   console.log(e);
+   spinput.innerText = spinput.innerText + '0'
+}
+let userdzero =(e)=>{
+   console.log(e);
+   spinput.innerText = spinput.innerText + '00'
+}
 
 
 
