@@ -71,6 +71,10 @@ let operatordivi=(e)=>{
  console.log(e);
  spinput.innerText = spinput.innerText + '/';
 }
+let  operatormod = (e)=>{
+   console.log(e);
+   spinput.innerText = spinput.innerText + '%';
+}
  
 let operatorequal =(e)=>{
    console.log(e);
@@ -84,7 +88,7 @@ let b =[];
 let c =[];
 for(let i=0;i<data.length;i++)
  {
-     if(data[i] == '+' || data[i] == '-' || data[i] == '*' || data[i] == '/' )
+     if(data[i] == '+' || data[i] == '-' || data[i] == '*' || data[i] == '/'|| data[i]=='%' )
      {
          b.push(a.join(''));
          a=[];
@@ -111,8 +115,13 @@ for(let i=0;i<data.length;i++)
    let total = num1 * num2; 
    console.log(total);
    resultinput.value = total;
-}else{
+}else if(c == '/'){
   let total = num1 / num2; 
+   console.log(total); 
+   resultinput.value = total;
+}
+else{
+   let total = num1 % num2; 
    console.log(total); 
    resultinput.value = total;
 }
